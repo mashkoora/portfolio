@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>internship - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    .contact-container {
+      max-width:700px;
+      margin:auto;
+      padding:3rem 2rem;
+      text-align:center;
+      min-height:calc(100vh - 70px);
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      gap:1.5rem;
+    }
+    .contact-container h1 {
+      font-size:2.5rem;
+      background:linear-gradient(90deg,var(--accent-a),var(--accent-b));
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+    .contact-item {
+      font-size:1.2rem;
+      padding:1rem;
+      border-radius:12px;
+      background:var(--card-bg);
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      transition:transform 0.3s ease, box-shadow 0.3s ease;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:0.8rem;
+    }
+    .contact-item:hover {
+      transform:translateY(-5px);
+      box-shadow:0 6px 15px rgba(0,0,0,0.2);
+    }
+    .contact-item a {
+      color:var(--accent-a);
+      text-decoration:none;
+      font-weight:bold;
+    }
+    .contact-item i {
+      font-size:1.5rem;
+      color:var(--accent-a);
+    }
+  </style>
+</head>
+<body>
+  
+  
+ <nav>
+  <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+  <div class="logo"><a href="index.html">My Portfolio</a></div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="internship.html" class="active">Internship</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="achievement.html">Achievements</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button id="themeToggle">🌙</button>
+</nav>
+
+
+
+
+
+  <section class="section internship">
+    <h2>Internship Experience</h2>
+    <div class="cards">
+      <div class="card">
+        <a href="images/horizon.png" target="_blank">
+          <img src="images/horizon.png" alt="Horizon Internship Preview">
+        </a>
+        <h3>Horizon</h3>
+        <p>Worked on automation and robotics systems.</p>
+      </div>
+      <div class="card">
+        <a href="images/cadillac.jpg" target="_blank">
+          <img src="images/cadillac.jpg" alt="Cadillac Automation Internship Preview">
+        </a>
+        <h3>Cadillac Automation</h3>
+        <p>Gained hands-on experience with industrial automation systems and PLC programming.</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

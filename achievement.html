@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    .contact-container {
+      max-width:700px;
+      margin:auto;
+      padding:3rem 2rem;
+      text-align:center;
+      min-height:calc(100vh - 70px);
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      gap:1.5rem;
+    }
+    .contact-container h1 {
+      font-size:2.5rem;
+      background:linear-gradient(90deg,var(--accent-a),var(--accent-b));
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+    .contact-item {
+      font-size:1.2rem;
+      padding:1rem;
+      border-radius:12px;
+      background:var(--card-bg);
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      transition:transform 0.3s ease, box-shadow 0.3s ease;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:0.8rem;
+    }
+    .contact-item:hover {
+      transform:translateY(-5px);
+      box-shadow:0 6px 15px rgba(0,0,0,0.2);
+    }
+    .contact-item a {
+      color:var(--accent-a);
+      text-decoration:none;
+      font-weight:bold;
+    }
+    .contact-item i {
+      font-size:1.5rem;
+      color:var(--accent-a);
+    }
+  </style>
+</head>
+<body>
+  
+  <nav>
+    <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+    <div class="logo"><a href="index.html">My Portfolio</a></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="internship.html">Internship</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="achievement.html" class="active">Achievements</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button id="themeToggle">🌙</button>
+  </nav>
+
+  <!-- Achievements Section -->
+  <section class="section achievement">
+    <h2>Achievements</h2>
+    <div class="cards">
+      <div class="card">
+        <a href="images/robowar_cusat.png" target="_blank">
+          <img src="images/robowar_cusat.png" alt="Robowar at CUSAT Preview">
+        </a>
+        <h3>Robowar at CUSAT</h3>
+        <p>Participated in the Robowar competition held at Cochin University of Science and Technology (CUSAT).</p>
+      </div>
+
+      <div class="card">
+        <a href="images/technical_award.jpg" target="_blank">
+          <img src="images/technical_award.jpg" alt="Best Technical School Award Preview">
+        </a>
+        <h3>Best Technical School Award</h3>
+        <p>Recognized with the Best Technical School Award for excellence in innovation and technical projects.</p>
+      </div>
+
+      <!-- 🆕 Electrical Wiring Achievement -->
+      <div class="card">
+        <a href="images/electrical_wiring.jpg" target="_blank">
+          <img src="images/electrical_wiring.jpg" alt="Electrical Wiring Achievement Preview">
+        </a>
+        <h3>Electrical Wiring</h3>
+        <p>Awarded <b>3rd Prize</b> in State Level Shasthramela. Selected <b>three times</b> at the state level and achieved <b>A Grade</b> for consistent performance.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hackathon Section -->
+  <section class="section achievement">
+    <h2>Hackathons</h2>
+    <div class="cards">
+      <div class="card">
+        <a href="images/revathon.jpg" target="_blank">
+          <img src="images/revathon.jpg" alt="Rev-a-Thon Reverse Engineering Hackathon Preview">
+        </a>
+        <h3>Rev-a-Thon</h3>
+        <p>Participated in Rev-a-Thon, a reverse engineering hackathon focused on problem-solving, debugging, and breaking down complex systems to create innovative solutions.</p>
+      </div>
+
+      <div class="card">
+        <a href="images/laptop.jpg" target="_blank">
+          <img src="images/laptop.jpg" alt="Useless Project 2.0 Hackathon Preview">
+        </a>
+        <h3>Useless Project 2.0</h3>
+        <p>Took part in Useless Project 2.0, a creative hackathon focused on fun, quirky, and out-of-the-box innovations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Workshops Section -->
+  <section class="section achievement">
+    <h2>Workshops Conducted</h2>
+    <div class="cards">
+      <div class="card">
+        <a href="images/workshop.jpg" target="_blank">
+          <img src="images/workshop.jpg" alt="Arduino and 3D Printing Workshop Preview">
+        </a>
+        <h3>Arduino & 3D Printing Workshop</h3>
+        <p>Conducted a vacation workshop with my team, teaching students about basic Arduino projects and 3D printing technology.</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
